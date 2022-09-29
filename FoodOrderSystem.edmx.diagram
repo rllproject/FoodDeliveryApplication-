@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c2f94864f60a418b91129f0d9b59af04" Name="Diagram1">
+        <EntityTypeShape EntityType="FoodOrderSystemModel.Order" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodOrderSystemModel.Product" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodOrderSystemModel.Restorent" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodOrderSystemModel.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="FoodOrderSystemModel.FK_Orders_Restorents" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodOrderSystemModel.FK_Orders_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodOrderSystemModel.FK_Products_Restorents" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="FoodOrderSystemModel.Invoice" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="FoodOrderSystemModel.FK_Invoices_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
